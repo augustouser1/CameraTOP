@@ -5,7 +5,7 @@ import { Mensagem } from '../SCREENS/mensagem';
 import {Camera} from '../SCREENS/Camera';
 import { Home } from '../SCREENS/Homero';
 import { Imagens } from '../SCREENS/Imagens';
-import { QrCode } from '../SCREENS/QrCode';
+import { ScreenQrCode } from '../SCREENS/';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Entypo from '@expo/vector-icons/Entypo';
 
@@ -84,7 +84,7 @@ export function DrawerNavigation(){
                  ),
                }}
               />
-               <Drawer.Screen name='QrCode' component={QrCode}
+               <Drawer.Screen name='QrCode' component={ScreenQrCode}
                options={{
                  drawerIcon: () => (
                    <Ionicons name="qr-code" size={24} color="white" />
